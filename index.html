@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Metadatos Principales -->
+  <title>Kevin Matheo Paspuel | Ingeniero en Sistemas & Software Developer</title>
+  <meta name="description" content="Sitio web y portafolio profesional de Kevin Matheo Paspuel Enríquez. Ingeniero en Sistemas (UISRAEL), desarrollador de software y entusiasta de la seguridad informática y redes.">
+  <meta name="keywords" content="Kevin Matheo Paspuel, Matheo Paspuel, Ingeniero en Sistemas, Software Developer, Ciberseguridad, Aircrack-ng, Quito Ecuador, UISRAEL, Portafolio Web">
+  <meta name="author" content="Kevin Matheo Paspuel Enríquez">
+  
+  <!-- Open Graph / Redes Sociales (LinkedIn, WhatsApp, Facebook) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kevin Matheo Paspuel | Ingeniero en Sistemas & Software Developer">
+  <meta property="og:description" content="Explora mi portafolio profesional: proyectos de software, publicaciones científicas en seguridad de redes y soluciones tecnológicas.">
+  <meta property="og:url" content="https://www.linkedin.com/in/matheokm">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Hoja de Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==================== ENCABEZADO Y BARRA DE NAVEGACIÓN ==================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-code">&lt;</span>KMP<span class="logo-code"> /&gt;</span>
+      </a>
+
+      <!-- Menú de navegación principal -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Inicio</a>
+        <a href="#about" class="nav-link">Sobre Mí</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Proyectos</a>
+        <a href="#experience" class="nav-link">Trayectoria</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Botones de acción: Cambiador de Tema y CV -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <i class="fas fa-sun"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fas fa-paper-plane"></i> Contactar
+        </a>
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (PORTADA) ==================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Contenido principal del Hero -->
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-pulse"></span>
+            Disponible para nuevos retos & proyectos
+          </div>
+          
+          <h1 class="hero-title">
+            Hola, soy <br>
+            <span class="gradient-text">Kevin Matheo Paspuel</span>
+          </h1>
+
+          <!-- Efecto de máquina de escribir -->
+          <div class="hero-typed-wrapper">
+            <span>&gt;&nbsp;</span>
+            <span id="typewriter-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Ingeniero en Sistemas graduado de la <strong>Universidad Tecnológica Israel (UISRAEL)</strong>. 
+            Especializado en desarrollo de software, arquitectura de sistemas y seguridad informática. 
+            Autor de investigaciones científicas en auditoría de redes inalámbricas y creador de soluciones tecnológicas enfocadas en la eficiencia y la seguridad.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-laptop-code"></i> Explorar Proyectos
+            </a>
+            <a href="https://www.linkedin.com/in/matheokm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <i class="fab fa-linkedin"></i> Perfil de LinkedIn
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i> Escríbeme
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/matheokm" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:atheoos@gmail.com" class="social-link" title="Correo Electrónico">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#about" class="social-link" title="Ubicación">
+              <i class="fas fa-map-marker-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta Visual Interactiva (Terminal & Code Snapshot) -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal-title">kevin_profile.json</span>
+              <i class="fas fa-code" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="code-key">const</span> <span class="code-str">developer</span> = {</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">nombre</span>: <span class="code-str">"Kevin Matheo Paspuel E."</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">carrera</span>: <span class="code-str">"Ingeniería en Sistemas"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">universidad</span>: <span class="code-str">"UISRAEL"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">investigación</span>: <span class="code-str">"Nexos Científicos (2018)"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">especialidad</span>: [<span class="code-str">"Software"</span>, <span class="code-str">"Security"</span>, <span class="code-str">"Networks"</span>],</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">ubicacion</span>: <span class="code-str">"Quito, Ecuador"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">disponible</span>: <span class="code-bool">true</span></div>
+              <div class="terminal-line">};</div>
+            </div>
+          </div>
+
+          <!-- Badges de Tecnologías Destacadas -->
+          <div class="floating-pills">
+            <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="tech-pill"><i class="fab fa-js-square"></i> JavaScript</span>
+            <span class="tech-pill"><i class="fas fa-shield-halved"></i> Ciberseguridad</span>
+            <span class="tech-pill"><i class="fas fa-network-wired"></i> Redes & Aircrack-ng</span>
+            <span class="tech-pill"><i class="fas fa-database"></i> SQL Databases</span>
+            <span class="tech-pill"><i class="fab fa-linux"></i> Linux OS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE MÍ (ABOUT ME) ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-user-tie"></i> Perfil Profesional</span>
+        <h2 class="section-title">Ingeniería, Innovación y Seguridad</h2>
+        <p class="section-subtitle">
+          Uniendo el desarrollo de software moderno con un sólido conocimiento en seguridad de la información y arquitectura de redes.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Soy <strong>Kevin Matheo Paspuel Enríquez</strong>, profesional en <strong>Ingeniería en Sistemas</strong> formado en la <strong>Universidad Tecnológica Israel (UISRAEL)</strong> en Quito, Ecuador.
+          </p>
+          <p>
+            Mi formación técnica y curiosidad investigativa me han llevado a profundizar no solo en el ciclo de desarrollo de software (diseño, implementación y pruebas), sino también en la <strong>ciberseguridad aplicada</strong>. Fui autor de la publicación científica <em>"Hack de Redes Wireless con Aircrack-ng"</em> en la revista académica <strong>Nexos Científicos</strong>, lo que fundamentó mi visión orientada a construir aplicaciones protegidas contra vectores de ataque contemporáneos.
+          </p>
+          <p>
+            Mi objetivo es aportar valor tangible mediante soluciones tecnológicas robustas, optimizadas y escalables, manteniendo siempre altos estándares de código y buenas prácticas.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-box">
+              <i class="fas fa-shield-alt feature-icon"></i>
+              <h4>Desarrollo Seguro</h4>
+              <p>Seguridad informática integrada desde la concepción del diseño de software.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-code feature-icon"></i>
+              <h4>Código Limpio</h4>
+              <p>Estructuras modulares, mantenibles y apegadas a buenas prácticas.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-project-diagram feature-icon"></i>
+              <h4>Arquitectura TI</h4>
+              <p>Planificación de infraestructura, bases de datos y servicios en red.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-users-gear feature-icon"></i>
+              <h4>Metodologías Ágiles</h4>
+              <p>Capacidad analítica, colaboración proactiva y entrega continua.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number gradient-text">+5</div>
+            <div class="stat-label">Años de formación técnica y práctica en sistemas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number gradient-text">1</div>
+            <div class="stat-label">Publicación científica indexada en seguridad</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number gradient-text">100%</div>
+            <div class="stat-label">Enfoque en calidad, resolución y seguridad</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number gradient-text">+15</div>
+            <div class="stat-label">Tecnologías, protocolos y herramientas dominadas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HABILIDADES & TECH STACK ==================== -->
+  <section class="section" id="skills" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-bolt"></i> Competencias Técnicas</span>
+        <h2 class="section-title">Habilidades y Stack Tecnológico</h2>
+        <p class="section-subtitle">
+          Herramientas y tecnologías aplicadas en ingeniería de software, seguridad de infraestructura y gestión de datos.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Categoría 1: Lenguajes -->
+        <div class="skill-category-card">
+          <div class="category-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="category-title">Lenguajes de Programación</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-python"></i> Python</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-java"></i> Java / C#</span>
+              <span class="skill-badge">Intermedio</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-database"></i> SQL (PostgreSQL, MySQL)</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-html5"></i> HTML5 Semántico & CSS3</span>
+              <span class="skill-badge">Experto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoría 2: Desarrollo Web & APIs -->
+        <div class="skill-category-card">
+          <div class="category-icon">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3 class="category-title">Desarrollo Web & Backend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-node-js"></i> Node.js & Express</span>
+              <span class="skill-badge">Sólido</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-arrows-split-up-and-left"></i> RESTful APIs & JSON</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-react"></i> React & Frontend Apps</span>
+              <span class="skill-badge">Intermedio</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-mobile-screen"></i> Diseño UI/UX Responsivo</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-lock"></i> Autenticación & JWT</span>
+              <span class="skill-badge">Sólido</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoría 3: Ciberseguridad & Redes -->
+        <div class="skill-category-card">
+          <div class="category-icon">
+            <i class="fas fa-shield-virus"></i>
+          </div>
+          <h3 class="category-title">Ciberseguridad & Redes</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-wifi"></i> Auditoría Wireless (Aircrack-ng)</span>
+              <span class="skill-badge">Especialista</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-network-wired"></i> TCP/IP, DNS & Protocolos</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-linux"></i> Kali Linux & Terminal</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-bug"></i> Análisis de Vulnerabilidades</span>
+              <span class="skill-badge">Sólido</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-user-shield"></i> Hardening y Políticas TI</span>
+              <span class="skill-badge">Sólido</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categoría 4: Herramientas & Entornos -->
+        <div class="skill-category-card">
+          <div class="category-icon">
+            <i class="fas fa-toolbox"></i>
+          </div>
+          <h3 class="category-title">Herramientas & Entornos</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-git-alt"></i> Git & Control de Versiones</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-github"></i> GitHub & Colaboración</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-docker"></i> Docker & Contenedores</span>
+              <span class="skill-badge">Intermedio</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-terminal"></i> Linux Server & Bash</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-diagram-project"></i> Postman & Testing APIs</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROYECTOS & PUBLICACIONES ==================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-folder-open"></i> Portafolio y Producción</span>
+        <h2 class="section-title">Proyectos & Publicaciones</h2>
+        <p class="section-subtitle">
+          Una selección de investigaciones académicas, desarrollos de software y aplicaciones técnicas.
+        </p>
+      </div>
+
+      <!-- Filtros interactivos -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">Todos los Trabajos</button>
+        <button class="filter-btn" data-filter="research">Investigación Científica</button>
+        <button class="filter-btn" data-filter="dev">Desarrollo de Software</button>
+        <button class="filter-btn" data-filter="security">Ciberseguridad & Redes</button>
+      </div>
+
+      <!-- Cuadrícula de Proyectos -->
+      <div class="projects-grid">
+        
+        <!-- Proyecto 1: Publicación Científica (Destacado) -->
+        <div class="project-card" data-category="research security">
+          <span class="project-featured-badge"><i class="fas fa-star"></i> Publicación Científica</span>
+          <div class="project-preview">
+            <i class="fas fa-shield-halved project-preview-icon"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Investigación Académica & Seguridad</span>
+            <h3 class="project-title">Hack de Redes Wireless con Aircrack-ng</h3>
+            <p class="project-desc">
+              Artículo científico publicado en la revista académica <strong>Nexos Científicos (2018)</strong>. Investigación técnica sobre la evaluación de vulnerabilidades en redes inalámbricas basadas en estándares 802.11 (WEP, WPA/WPA2), inyección de paquetes, captura de 4-way handshake y medidas de fortificación de infraestructuras Wi-Fi.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Nexos Científicos</span>
+              <span class="project-tag">Aircrack-ng</span>
+              <span class="project-tag">Wi-Fi Audit</span>
+              <span class="project-tag">Linux</span>
+              <span class="project-tag">Ciberseguridad</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://www.linkedin.com/in/matheokm" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fas fa-external-link-alt"></i> Ver en Nexos Científicos
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: APP IESS -->
+        <div class="project-card" data-category="dev">
+          <div class="project-preview">
+            <i class="fas fa-mobile-screen-button project-preview-icon"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Desarrollo de Aplicaciones & Sistemas</span>
+            <h3 class="project-title">APP IESS - Plataforma de Gestión de Citas</h3>
+            <p class="project-desc">
+              Diseño y conceptualización de una solución de software móvil orientada al agendamiento, confirmación y consulta de citas médicas para afiliados del Instituto Ecuatoriano de Seguridad Social (IESS), optimizando los tiempos de espera y la accesibilidad ciudadana.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Mobile App</span>
+              <span class="project-tag">Sistemas de Gestión</span>
+              <span class="project-tag">UI/UX</span>
+              <span class="project-tag">Arquitectura TI</span>
+            </div>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <i class="fas fa-info-circle"></i> Solicitar detalles de la arquitectura
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Software Educativo Interactivo -->
+        <div class="project-card" data-category="dev">
+          <div class="project-preview">
+            <i class="fas fa-graduation-cap project-preview-icon"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Software de Escritorio & Pedagogía</span>
+            <h3 class="project-title">Software Educativo Multimedia</h3>
+            <p class="project-desc">
+              Desarrollo de un software interactivo con interfaces gráficas amigables para la estimulación temprana y enseñanza interactiva de vocabulario en inglés para niños de 3 a 5 años, integrando elementos auditivos, visuales y mecánicas de refuerzo positivo.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Desktop App</span>
+              <span class="project-tag">Educación TI</span>
+              <span class="project-tag">Interacción Humano-PC</span>
+              <span class="project-tag">Multimedia</span>
+            </div>
+            <div class="project-footer">
+              <a href="#contact" class="project-link">
+                <i class="fas fa-info-circle"></i> Ver especificaciones
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4: Network Security Scanner & Scripts -->
+        <div class="project-card" data-category="security dev">
+          <div class="project-preview">
+            <i class="fas fa-network-wired project-preview-icon"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Ciberseguridad & Automatización</span>
+            <h3 class="project-title">Network Scanner & Vulnerability Auditor</h3>
+            <p class="project-desc">
+              Conjunto de scripts y herramientas de análisis en Python y Bash diseñadas para el mapeo automatizado de redes locales, escaneo de puertos TCP/UDP abiertos, detección de servicios desactualizados y generación de reportes de seguridad.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Bash Scripting</span>
+              <span class="project-tag">Sockets</span>
+              <span class="project-tag">Auditoría TI</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fab fa-github"></i> Ver en GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 5: Web Portfolio Profesional -->
+        <div class="project-card" data-category="dev">
+          <div class="project-preview">
+            <i class="fas fa-globe project-preview-icon"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Desarrollo Web Frontend</span>
+            <h3 class="project-title">Portafolio Web Profesional & Marca Personal</h3>
+            <p class="project-desc">
+              Plataforma web diseñada con altos estándares de rendimiento y accesibilidad (WCAG). Incorpora modo oscuro/claro con persistencia, animaciones fluidas en CSS, diseño Mobile-First y estructura semántica optimizada para motores de búsqueda.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5 Semántico</span>
+              <span class="project-tag">CSS3 Moderno</span>
+              <span class="project-tag">JavaScript Vanilla</span>
+              <span class="project-tag">Dark/Light Mode</span>
+            </div>
+            <div class="project-footer">
+              <a href="#hero" class="project-link">
+                <i class="fas fa-eye"></i> Vista en vivo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRAYECTORIA Y FORMACIÓN (TIMELINE) ==================== -->
+  <section class="section" id="experience" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-graduation-cap"></i> Formación y Trayectoria</span>
+        <h2 class="section-title">Educación & Logros Profesionales</h2>
+        <p class="section-subtitle">
+          El camino académico y técnico que respalda mi formación y compromiso con la disciplina informática.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Hito 1: Universidad Tecnológica Israel -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">Universidad Tecnológica Israel (UISRAEL)</span>
+            <h3 class="timeline-role">Ingeniería en Sistemas</h3>
+            <div class="timeline-org">Quito, Ecuador</div>
+            <p class="timeline-desc">
+              Formación integral en ingeniería de software, arquitectura de sistemas de computación, diseño de bases de datos relacionales, redes de comunicación de datos, ciberseguridad y metodologías para el desarrollo ágil de proyectos tecnológicos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hito 2: Publicación en Nexos Científicos -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">Publicación Científica Académica • 2018</span>
+            <h3 class="timeline-role">Autor de Investigación: "Hack de Redes Wireless con Aircrack-ng"</h3>
+            <div class="timeline-org">Revista Nexos Científicos</div>
+            <p class="timeline-desc">
+              Publicación formal de artículo de divulgación e investigación científica enfocado en la seguridad de las telecomunicaciones inalámbricas, protocolos de autenticación y metodologías de defensa ante ataques dirigidos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hito 3: Proyectos de Desarrollo y Aplicaciones Tecnológicas -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">Proyectos de Software y Sistemas</span>
+            <h3 class="timeline-role">Desarrollador de Software & Arquitecto de Soluciones</h3>
+            <div class="timeline-org">Proyectos Independientes e Institucionales</div>
+            <p class="timeline-desc">
+              Creación y entrega de aplicaciones móviles, plataformas de escritorio con interfaces pedagógicas, herramientas de automatización y auditoría técnica de infraestructura informática.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTO ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-comments"></i> Hablemos</span>
+        <h2 class="section-title">Iniciemos una Conversación</h2>
+        <p class="section-subtitle">
+          ¿Tienes un proyecto en mente, buscas un profesional en sistemas o deseas colaborar? Escríbeme y me pondré en contacto contigo de inmediato.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Tarjeta de Información de Contacto -->
+        <div class="contact-info-card">
+          <h3>Información de Contacto Directo</h3>
+          <p>
+            Estoy disponible para oportunidades laborales, desarrollo de software, auditorías de seguridad en redes o proyectos de innovación tecnológica.
+          </p>
+
+          <div class="contact-methods">
+            <!-- Correo -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-item-details">
+                <div class="contact-item-label">Correo Electrónico</div>
+                <div class="contact-item-value" id="contact-email-text">atheoos@gmail.com</div>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Copiar correo" aria-label="Copiar correo al portapapeles">
+                <i class="far fa-copy"></i> Copiar
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="contact-item-details">
+                <div class="contact-item-label">LinkedIn Oficial</div>
+                <div class="contact-item-value">
+                  <a href="https://www.linkedin.com/in/matheokm" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); text-decoration: underline;">
+                    linkedin.com/in/matheokm
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="contact-item-details">
+                <div class="contact-item-label">Ubicación</div>
+                <div class="contact-item-value">Quito, Ecuador (Remoto / Híbrido / Presencial)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario de Contacto -->
+        <div class="contact-form-card">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Tu Nombre completo *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Ej. Carlos Mendoza" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Tu Correo Electrónico *</label>
+              <input type="email" id="form-email" class="form-input" placeholder="carlos@empresa.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Mensaje o Detalle del Proyecto *</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Cuéntame sobre tu proyecto, requerimiento o propuesta..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © <span id="current-year">2026</span> <strong>Kevin Matheo Paspuel Enríquez</strong>. Todos los derechos reservados.
+        <br><small style="color: var(--text-muted);">Ingeniería en Sistemas | UISRAEL | Ciberseguridad & Software</small>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/matheokm" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:atheoos@gmail.com" class="social-link" title="Correo">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Volver Arriba -->
+  <button class="back-to-top" id="back-to-top" title="Volver arriba" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Notificación Toast -->
+  <div class="toast" id="toast">
+    <i class="fas fa-circle-check toast-icon"></i>
+    <span class="toast-message">¡Acción completada con éxito!</span>
+  </div>
+
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
