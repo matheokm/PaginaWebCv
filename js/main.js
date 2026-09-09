@@ -59,10 +59,11 @@ function initTypewriter() {
   if (!textElement) return;
 
   const roles = [
-    'Ingeniero en Sistemas',
-    'Software Developer',
-    'Cybersecurity Enthusiast',
-    'Arquitecto de Soluciones TI'
+    'Máster en Ingeniería de Software (UNIR)',
+    'Full-Stack Developer (Spring & React)',
+    'Ingeniero en Sistemas (UISRAEL)',
+    'Especialista en Web Scraping & UX',
+    'Ciberseguridad & Redes'
   ];
 
   let roleIndex = 0;

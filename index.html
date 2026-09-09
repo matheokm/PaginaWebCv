@@ -67,14 +67,19 @@
       <div class="hero-grid">
         <!-- Contenido principal del Hero -->
         <div class="hero-content">
-          <div class="status-badge">
-            <span class="status-pulse"></span>
-            Disponible para nuevos retos & proyectos
+          <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+            <div class="status-badge">
+              <span class="status-pulse"></span>
+              Disponible para nuevos retos & proyectos
+            </div>
+            <div class="status-badge" style="background: rgba(6, 182, 212, 0.12); border-color: rgba(6, 182, 212, 0.35); color: var(--accent-cyan);">
+              <i class="fas fa-graduation-cap"></i> Máster en Ing. de Software (UNIR)
+            </div>
           </div>
           
           <h1 class="hero-title">
             Hola, soy <br>
-            <span class="gradient-text">Kevin Matheo Paspuel</span>
+            <span class="gradient-text">Kevin Matheo Paspuel</span>, <span style="font-size: 0.7em; font-weight: 700; color: var(--accent-cyan);">MSc.</span>
           </h1>
 
           <!-- Efecto de máquina de escribir -->
@@ -85,14 +90,13 @@
           </div>
 
           <p class="hero-description">
-            Ingeniero en Sistemas graduado de la <strong>Universidad Tecnológica Israel (UISRAEL)</strong>. 
-            Especializado en desarrollo de software, arquitectura de sistemas y seguridad informática. 
-            Autor de investigaciones científicas en auditoría de redes inalámbricas y creador de soluciones tecnológicas enfocadas en la eficiencia y la seguridad.
+            <strong>Máster en Ingeniería de Software y Sistemas Informáticos</strong> por la <strong>UNIR</strong> e <strong>Ingeniero en Sistemas</strong> por la <strong>UISRAEL</strong>.
+            Especializado en arquitectura de software empresarial (<strong>Spring Framework, React.js, React Native</strong>), análisis financiero con <strong>Web Scraping</strong>, metodologías <strong>Scrum</strong> y ciberseguridad.
           </p>
 
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">
-              <i class="fas fa-laptop-code"></i> Explorar Proyectos
+              <i class="fas fa-laptop-code"></i> Ver Proyectos & TFM
             </a>
             <a href="https://www.linkedin.com/in/matheokm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
               <i class="fab fa-linkedin"></i> Perfil de LinkedIn
@@ -132,12 +136,13 @@
             </div>
             <div class="terminal-body">
               <div class="terminal-line"><span class="code-key">const</span> <span class="code-str">developer</span> = {</div>
-              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">nombre</span>: <span class="code-str">"Kevin Matheo Paspuel E."</span>,</div>
-              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">carrera</span>: <span class="code-str">"Ingeniería en Sistemas"</span>,</div>
-              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">universidad</span>: <span class="code-str">"UISRAEL"</span>,</div>
-              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">investigación</span>: <span class="code-str">"Nexos Científicos (2018)"</span>,</div>
-              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">especialidad</span>: [<span class="code-str">"Software"</span>, <span class="code-str">"Security"</span>, <span class="code-str">"Networks"</span>],</div>
-              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">ubicacion</span>: <span class="code-str">"Quito, Ecuador"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">nombre</span>: <span class="code-str">"Kevin Matheo Paspuel E., MSc."</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">posgrado</span>: <span class="code-str">"Máster en Ing. de Software (UNIR)"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">nota_tfm</span>: <span class="code-num">8.24</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">tfm</span>: <span class="code-str">"Análisis Financiero & Web Scraping"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">pregrado</span>: <span class="code-str">"Ingeniería en Sistemas (UISRAEL)"</span>,</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">stack</span>: [<span class="code-str">"Spring"</span>, <span class="code-str">"React"</span>, <span class="code-str">"React Native"</span>, <span class="code-str">"Python"</span>],</div>
+              <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">metodologias</span>: [<span class="code-str">"Scrum"</span>, <span class="code-str">"UX Design"</span>],</div>
               <div class="terminal-line">&nbsp;&nbsp;<span class="code-key">disponible</span>: <span class="code-bool">true</span></div>
               <div class="terminal-line">};</div>
             </div>
@@ -145,12 +150,12 @@
 
           <!-- Badges de Tecnologías Destacadas -->
           <div class="floating-pills">
+            <span class="tech-pill"><i class="fas fa-leaf" style="color: #10b981;"></i> Spring Framework</span>
+            <span class="tech-pill"><i class="fab fa-react" style="color: #06b6d4;"></i> React & React Native</span>
+            <span class="tech-pill"><i class="fas fa-spider" style="color: #f59e0b;"></i> Web Scraping</span>
             <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
-            <span class="tech-pill"><i class="fab fa-js-square"></i> JavaScript</span>
             <span class="tech-pill"><i class="fas fa-shield-halved"></i> Ciberseguridad</span>
-            <span class="tech-pill"><i class="fas fa-network-wired"></i> Redes & Aircrack-ng</span>
-            <span class="tech-pill"><i class="fas fa-database"></i> SQL Databases</span>
-            <span class="tech-pill"><i class="fab fa-linux"></i> Linux OS</span>
+            <span class="tech-pill"><i class="fas fa-tasks"></i> Scrum & UX</span>
           </div>
         </div>
       </div>
@@ -171,55 +176,55 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            Soy <strong>Kevin Matheo Paspuel Enríquez</strong>, profesional en <strong>Ingeniería en Sistemas</strong> formado en la <strong>Universidad Tecnológica Israel (UISRAEL)</strong> en Quito, Ecuador.
+            Soy <strong>Kevin Matheo Paspuel Enríquez</strong>, graduado del <strong>Máster en Ingeniería de Software y Sistemas Informáticos</strong> por la <strong>Universidad Internacional de La Rioja (UNIR)</strong> con una calificación sobresaliente de <strong>8.24 / 10</strong>, e <strong>Ingeniero en Sistemas</strong> por la <strong>Universidad Tecnológica Israel (UISRAEL)</strong> en Quito, Ecuador.
           </p>
           <p>
-            Mi formación técnica y curiosidad investigativa me han llevado a profundizar no solo en el ciclo de desarrollo de software (diseño, implementación y pruebas), sino también en la <strong>ciberseguridad aplicada</strong>. Fui autor de la publicación científica <em>"Hack de Redes Wireless con Aircrack-ng"</em> en la revista académica <strong>Nexos Científicos</strong>, lo que fundamentó mi visión orientada a construir aplicaciones protegidas contra vectores de ataque contemporáneos.
+            Durante mi formación de posgrado desarrollé mi Trabajo de Fin de Máster (TFM) enfocado en una <strong>aplicación para el análisis financiero mediante la recopilación y web scraping de datos públicos en Ecuador</strong>, articulando arquitecturas backend de alto rendimiento con <strong>Spring Framework</strong>, aplicaciones web y móviles con <strong>React.js y React Native</strong>, diseño de experiencia de usuario (UX) y gestión ágil con <strong>Scrum</strong>.
           </p>
           <p>
-            Mi objetivo es aportar valor tangible mediante soluciones tecnológicas robustas, optimizadas y escalables, manteniendo siempre altos estándares de código y buenas prácticas.
+            Complemento esta visión de ingeniería con un sólido trasfondo en <strong>ciberseguridad</strong>, habiendo sido autor del artículo científico <em>"Hack de Redes Wireless con Aircrack-ng"</em> publicado en la revista indexada <strong>Nexos Científicos</strong>. Mi enfoque se centra en crear soluciones de software empresariales escalables, seguras y respaldadas por datos.
           </p>
 
           <div class="about-features">
             <div class="feature-box">
+              <i class="fas fa-graduation-cap feature-icon"></i>
+              <h4>Nivel Posgrado MSc.</h4>
+              <p>Formación europea avanzada en ingeniería de software y sistemas (UNIR).</p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-cubes feature-icon"></i>
+              <h4>Full-Stack & Mobile</h4>
+              <p>Spring Framework, React.js, React Native y APIs REST escalables.</p>
+            </div>
+            <div class="feature-box">
+              <i class="fas fa-chart-line feature-icon"></i>
+              <h4>Datos & Scraping</h4>
+              <p>Extracción automatizada y análisis financiero sobre datos públicos.</p>
+            </div>
+            <div class="feature-box">
               <i class="fas fa-shield-alt feature-icon"></i>
-              <h4>Desarrollo Seguro</h4>
-              <p>Seguridad informática integrada desde la concepción del diseño de software.</p>
-            </div>
-            <div class="feature-box">
-              <i class="fas fa-code feature-icon"></i>
-              <h4>Código Limpio</h4>
-              <p>Estructuras modulares, mantenibles y apegadas a buenas prácticas.</p>
-            </div>
-            <div class="feature-box">
-              <i class="fas fa-project-diagram feature-icon"></i>
-              <h4>Arquitectura TI</h4>
-              <p>Planificación de infraestructura, bases de datos y servicios en red.</p>
-            </div>
-            <div class="feature-box">
-              <i class="fas fa-users-gear feature-icon"></i>
-              <h4>Metodologías Ágiles</h4>
-              <p>Capacidad analítica, colaboración proactiva y entrega continua.</p>
+              <h4>Seguridad desde el Diseño</h4>
+              <p>Auditoría de protocolos, hardening y protección de endpoints.</p>
             </div>
           </div>
         </div>
 
         <div class="about-stats">
           <div class="stat-card">
+            <div class="stat-number gradient-text">MSc.</div>
+            <div class="stat-label">Máster Internacional en Ingeniería de Software (UNIR)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number gradient-text">8.24</div>
+            <div class="stat-label">Calificación de posgrado en Trabajo de Fin de Máster</div>
+          </div>
+          <div class="stat-card">
             <div class="stat-number gradient-text">+5</div>
-            <div class="stat-label">Años de formación técnica y práctica en sistemas</div>
+            <div class="stat-label">Años de trayectoria técnica y proyectos en sistemas</div>
           </div>
           <div class="stat-card">
             <div class="stat-number gradient-text">1</div>
-            <div class="stat-label">Publicación científica indexada en seguridad</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number gradient-text">100%</div>
-            <div class="stat-label">Enfoque en calidad, resolución y seguridad</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number gradient-text">+15</div>
-            <div class="stat-label">Tecnologías, protocolos y herramientas dominadas</div>
+            <div class="stat-label">Publicación científica indexada en seguridad (2018)</div>
           </div>
         </div>
       </div>
@@ -268,32 +273,32 @@
           </div>
         </div>
 
-        <!-- Categoría 2: Desarrollo Web & APIs -->
+        <!-- Categoría 2: Desarrollo Web & Backend -->
         <div class="skill-category-card">
           <div class="category-icon">
             <i class="fas fa-layer-group"></i>
           </div>
-          <h3 class="category-title">Desarrollo Web & Backend</h3>
+          <h3 class="category-title">Desarrollo Web, Móvil & Backend</h3>
           <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-leaf"></i> Spring Framework & Boot</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-react"></i> React.js & React Native</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fas fa-spider"></i> Web Scraping & Data Mining</span>
+              <span class="skill-badge">Especialista</span>
+            </div>
             <div class="skill-item">
               <span class="skill-info"><i class="fab fa-node-js"></i> Node.js & Express</span>
               <span class="skill-badge">Sólido</span>
             </div>
             <div class="skill-item">
-              <span class="skill-info"><i class="fas fa-arrows-split-up-and-left"></i> RESTful APIs & JSON</span>
+              <span class="skill-info"><i class="fas fa-arrows-split-up-and-left"></i> RESTful APIs & Microservicios</span>
               <span class="skill-badge">Avanzado</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-info"><i class="fab fa-react"></i> React & Frontend Apps</span>
-              <span class="skill-badge">Intermedio</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-info"><i class="fas fa-mobile-screen"></i> Diseño UI/UX Responsivo</span>
-              <span class="skill-badge">Avanzado</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-info"><i class="fas fa-lock"></i> Autenticación & JWT</span>
-              <span class="skill-badge">Sólido</span>
             </div>
           </div>
         </div>
@@ -328,19 +333,23 @@
           </div>
         </div>
 
-        <!-- Categoría 4: Herramientas & Entornos -->
+        <!-- Categoría 4: Gestión, UX & Entornos -->
         <div class="skill-category-card">
           <div class="category-icon">
             <i class="fas fa-toolbox"></i>
           </div>
-          <h3 class="category-title">Herramientas & Entornos</h3>
+          <h3 class="category-title">Metodologías, UX & DevOps</h3>
           <div class="skills-list">
             <div class="skill-item">
-              <span class="skill-info"><i class="fab fa-git-alt"></i> Git & Control de Versiones</span>
+              <span class="skill-info"><i class="fas fa-people-arrows"></i> Scrum & Gestión de Software</span>
               <span class="skill-badge">Avanzado</span>
             </div>
             <div class="skill-item">
-              <span class="skill-info"><i class="fab fa-github"></i> GitHub & Colaboración</span>
+              <span class="skill-info"><i class="fas fa-pen-ruler"></i> Diseño de Experiencia (UX)</span>
+              <span class="skill-badge">Avanzado</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-info"><i class="fab fa-git-alt"></i> Git & GitHub Collaboration</span>
               <span class="skill-badge">Avanzado</span>
             </div>
             <div class="skill-item">
@@ -348,11 +357,7 @@
               <span class="skill-badge">Intermedio</span>
             </div>
             <div class="skill-item">
-              <span class="skill-info"><i class="fas fa-terminal"></i> Linux Server & Bash</span>
-              <span class="skill-badge">Avanzado</span>
-            </div>
-            <div class="skill-item">
-              <span class="skill-info"><i class="fas fa-diagram-project"></i> Postman & Testing APIs</span>
+              <span class="skill-info"><i class="fas fa-terminal"></i> Linux Server & Cloud Deploy</span>
               <span class="skill-badge">Avanzado</span>
             </div>
           </div>
@@ -383,6 +388,34 @@
       <!-- Cuadrícula de Proyectos -->
       <div class="projects-grid">
         
+        <!-- Proyecto Destacado 0: TFM Máster UNIR -->
+        <div class="project-card" data-category="research dev" style="border-color: rgba(6, 182, 212, 0.45); box-shadow: 0 8px 30px rgba(6, 182, 212, 0.15);">
+          <span class="project-featured-badge" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);"><i class="fas fa-award"></i> TFM Máster UNIR • Calificación: 8.24</span>
+          <div class="project-preview" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.25), rgba(59, 130, 246, 0.3), rgba(16, 185, 129, 0.2));">
+            <i class="fas fa-chart-line project-preview-icon" style="color: #38bdf8;"></i>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Trabajo de Fin de Máster • Posgrado UNIR</span>
+            <h3 class="project-title">Análisis Financiero & Web Scraping de Datos Públicos en Ecuador</h3>
+            <p class="project-desc">
+              Solución integral de software para la recopilación automatizada, minería de datos y análisis de indicadores económicos y financieros en Ecuador. Arquitectura backend empresarial con <strong>Spring Framework</strong>, aplicaciones multiplataforma con <strong>React.js y React Native</strong>, diseño centrado en el usuario (<strong>UX</strong>) y gestión con metodología <strong>Scrum</strong>.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag" style="color: #38bdf8; border-color: rgba(6, 182, 212, 0.3);">UNIR (Nota: 8.24)</span>
+              <span class="project-tag">Spring Framework</span>
+              <span class="project-tag">React.js</span>
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">Web Scraping</span>
+              <span class="project-tag">Scrum & UX</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://www.linkedin.com/in/matheokm" target="_blank" rel="noopener noreferrer" class="project-link">
+                <i class="fab fa-linkedin"></i> Ver credencial en LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- Proyecto 1: Publicación Científica (Destacado) -->
         <div class="project-card" data-category="research security">
           <span class="project-featured-badge"><i class="fas fa-star"></i> Publicación Científica</span>
@@ -526,6 +559,26 @@
       </div>
 
       <div class="timeline-container">
+        <!-- Hito 0: UNIR Máster en Ingeniería de Software (Destacado) -->
+        <div class="timeline-item">
+          <div class="timeline-marker" style="border-color: #38bdf8; box-shadow: 0 0 15px rgba(56, 189, 248, 0.8);"></div>
+          <div class="timeline-card" style="border-color: rgba(6, 182, 212, 0.4); background: rgba(17, 24, 39, 0.9);">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem;">
+              <span class="timeline-period" style="color: #38bdf8; font-weight: 700;">sept. 2023 – nov. 2024 • Posgrado Universitario</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; padding: 0.2rem 0.6rem; border-radius: 9999px; font-weight: 700;">
+                Nota: 8.24 / 10
+              </span>
+            </div>
+            <h3 class="timeline-role" style="color: #ffffff;">Máster en Ingeniería de Software y Sistemas Informáticos</h3>
+            <div class="timeline-org">UNIR - Universidad Internacional de La Rioja (España / Internacional)</div>
+            <p class="timeline-desc">
+              Especialización avanzada en <em>Computer Software Engineering</em>, arquitectura de software escalable y metodologías modernas. <br>
+              <strong>Trabajo de Fin de Máster (TFM):</strong> <em>"Aplicación para el análisis financiero a través de la recopilación de datos públicos en Ecuador"</em>. <br>
+              <strong>Competencias clave:</strong> Spring Framework, React.js, React Native, Web Scraping, Metodología Scrum, Diseño UX e Ingeniería de Software.
+            </p>
+          </div>
+        </div>
+
         <!-- Hito 1: Universidad Tecnológica Israel -->
         <div class="timeline-item">
           <div class="timeline-marker"></div>
